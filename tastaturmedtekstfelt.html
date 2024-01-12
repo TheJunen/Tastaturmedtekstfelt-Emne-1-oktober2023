@@ -1,0 +1,96 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <style>
+        .tekstboks{
+            border: 2px solid;
+            width: 400px;
+            height: 150px;
+            position: relative;
+            left: 450px;
+        }
+        
+    
+    </style>
+</head>
+<body>
+    <div class="tekstboks" id="app"></div>
+    <div id="tastatur"></div>
+
+    <script>
+        //Viewer
+        updateView();
+        function updateView(){
+            let app = document.getElementById('app');
+            app.innerHTML = /*HTML*/`
+            `;
+        }
+        tastatur();
+        function tastatur(){
+            let tastatur = document.getElementById('tastatur');
+            tastatur.innerHTML = /*HTML*/`
+            <button onclick="knappA('a')">a</button>
+            <button onclick="knappB('b')">b</button>
+            <button onclick="knappC('c')">c</button>
+            <button onclick="knappD('d')">d</button>
+            <button onclick="knappE('e')">e</button>
+            <button onclick="knappF('f')">f</button>
+            <button onclick="knappG('g')">g</button>
+            <button onclick="knappH('h')">h</button>
+            <button onclick="knappI('i')">i</button>
+            <button onclick="knappJ('j')">j</button>
+            <br>
+            <button onclick="mellomrom(' ')">Space</button>
+            `;
+        }
+        //controller
+        function knappA(bokstav){
+            let dos = document.getElementById('app')
+            dos.innerHTML += bokstav
+        }
+        function knappB(bokstav){
+            let dos = document.getElementById('app')
+            dos.innerHTML += bokstav
+        }
+        function knappC(bokstav){
+            let dos = document.getElementById('app')
+            dos.innerHTML += bokstav
+        }
+        function knappD(bokstav){
+            let dos = document.getElementById('app')
+            dos.innerHTML += bokstav
+        }
+        function knappE(bokstav){
+            let dos = document.getElementById('app')
+            dos.innerHTML += bokstav
+        }
+        function knappF(bokstav){
+            let dos = document.getElementById('app')
+            dos.innerHTML += bokstav
+        }
+        function knappG(bokstav){
+            let dos = document.getElementById('app')
+            dos.innerHTML += bokstav
+        }
+        function knappH(bokstav){
+            let dos = document.getElementById('app')
+            dos.innerHTML += bokstav
+        }
+        function knappI(bokstav){
+            let dos = document.getElementById('app')
+            dos.innerHTML += bokstav
+        }
+        function knappJ(bokstav){
+            let dos = document.getElementById('app')
+            dos.innerHTML += bokstav
+        }
+        function mellomrom(bokstav){
+            let dos = document.getElementById('app')
+            dos.innerHTML += bokstav
+        }
+    </script>
+</body>
+</html>
